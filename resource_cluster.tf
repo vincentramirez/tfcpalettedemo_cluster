@@ -104,7 +104,7 @@ resource "spectrocloud_cluster_aws" "cluster2" {
     count                   = var.master-pool_node_count
     instance_type           = var.master_instance_type
     disk_size_gb            = 62
-    azs                     = "us-east-1a"
+    azs                     = ["us-east-1a"]
   }
 
   machine_pool {
@@ -112,7 +112,7 @@ resource "spectrocloud_cluster_aws" "cluster2" {
     count         = var.worker-pool_node_count
     instance_type = var.worker_instance_type
     disk_size_gb  = 62
-    azs           = "us-east-1a"
+    azs           = ["us-east-1a"]
   }
 
 }
