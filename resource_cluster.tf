@@ -60,14 +60,14 @@ resource "spectrocloud_cluster_aws" "cluster" {
 
 }
 
-
-
+#############
+#adding new cluster for demo
+/*
 data "spectrocloud_cluster_profile" "profile2" {
   name = "dev-team-2"
   version = var.sc_cp_profile_version
 }
 
-#adding new cluster for demo
 resource "spectrocloud_cluster_aws" "cluster2" {
   name               = "devtm2-cluster01"
   cluster_profile {
@@ -123,3 +123,4 @@ resource "spectrocloud_cluster_aws" "cluster2" {
   }
 
 }
+*/
