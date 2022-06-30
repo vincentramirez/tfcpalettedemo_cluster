@@ -1,3 +1,4 @@
+/*
 data "spectrocloud_cluster_profile" "profile" {
   name = var.sc_cp_profile_name
   version = var.sc_cp_profile_version
@@ -123,3 +124,5 @@ resource "spectrocloud_cluster_aws" "cluster2" {
   }
 
 }
+
+*/
