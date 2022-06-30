@@ -62,7 +62,7 @@ resource "spectrocloud_cluster_aws" "cluster" {
 
 #adding new cluster for demo
 resource "spectrocloud_cluster_aws" "cluster2" {
-  name               = devtm1-cluster02
+  name               = "devtm1-cluster02"
   cluster_profile {
    id = data.spectrocloud_cluster_profile.profile.id
   }
@@ -74,7 +74,7 @@ resource "spectrocloud_cluster_aws" "cluster2" {
   
   cloud_config {
     ssh_key_name = var.aws_ssh_key_name
-    region       = us-east-2
+    region       = "us-east-2"
   }
 
   # To override or specify values for a cluster:
