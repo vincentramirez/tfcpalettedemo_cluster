@@ -2,7 +2,7 @@ output "cluster_id" {
   value = spectrocloud_cluster_aws.cluster.id
 }
 
-output "cluster_id" {
+output "cluster_id2" {
   value = spectrocloud_cluster_aws.cluster2.id
 }
 
