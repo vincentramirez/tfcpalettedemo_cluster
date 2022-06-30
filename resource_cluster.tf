@@ -60,6 +60,7 @@ resource "spectrocloud_cluster_aws" "cluster" {
 
 }
 
+/*
 #adding new cluster for demo
 resource "spectrocloud_cluster_aws" "cluster2" {
   name               = "devtm1-cluster02"
@@ -116,3 +117,4 @@ resource "spectrocloud_cluster_aws" "cluster2" {
   }
 
 }
+*/
