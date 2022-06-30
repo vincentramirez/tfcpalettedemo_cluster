@@ -61,7 +61,7 @@ resource "spectrocloud_cluster_aws" "cluster" {
 }
 
 #adding new cluster for demo
-resource "spectrocloud_cluster_aws" "cluster" {
+resource "spectrocloud_cluster_aws" "cluster2" {
   name               = devtm1-cluster02
   cluster_profile {
    id = data.spectrocloud_cluster_profile.profile.id
