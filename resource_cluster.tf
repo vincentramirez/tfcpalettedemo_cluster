@@ -74,7 +74,7 @@ resource "spectrocloud_cluster_aws" "cluster2" {
   
   cloud_config {
     ssh_key_name = var.aws_ssh_key_name
-    region       = "us-east-2"
+    region       = "us-east-1"
   }
 
   # To override or specify values for a cluster:
@@ -104,7 +104,7 @@ resource "spectrocloud_cluster_aws" "cluster2" {
     count                   = var.master-pool_node_count
     instance_type           = var.master_instance_type
     disk_size_gb            = 62
-    azs                     = var.master_aws_region_az
+    azs                     = "us-east-1a"
   }
 
   machine_pool {
@@ -112,7 +112,7 @@ resource "spectrocloud_cluster_aws" "cluster2" {
     count         = var.worker-pool_node_count
     instance_type = var.worker_instance_type
     disk_size_gb  = 62
-    azs           = var.worker_aws_region_az
+    azs           = "us-east-1a"
   }
 
 }
